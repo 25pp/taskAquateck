@@ -62,16 +62,3 @@ Flow:
 - Pagination is implemented with a "Load More" button that adds 20 records each time.
 - Pull-to-refresh refreshes API data while keeping current search and filter state.
 
-## Activity Timeline
-
-Integrated in TaskDetailScreen. A vertical stepper timeline is generated dynamically based on the complaint's current status:
-
-- Complaint Created (always shown)
-- Assigned to Engineer (always shown)
-- Status changes (Open, In Progress, Resolved) shown sequentially depending on current status
-
-The timeline uses a dot-and-line visual with primary theme color.
-
-## Dark Mode
-
-Integrated using a Riverpod theme provider. A toggle icon button is placed in the app bar of the list screen. Tapping it switches between light and dark themes across the entire app. The detail screen uses theme-aware colors so it renders correctly in both modes.
